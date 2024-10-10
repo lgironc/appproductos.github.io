@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>App de Productos</title>       
+        <!--BOOTSTRAP CDN-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/cerulean/bootstrap.min.css">
+        <body>
+            
+            <nav class="navbar navbar-light bg-light p-2">
+                <a href="/" class="navbar-brand">
+                    Catálogo
+                </a>
+            </nav>
+
+            <div class="container"> 
+                <!--APLICACION-->
+                <div id="App" class="row mt-4">
+                    <div class="col-md-3">
+                        <div class="card border-secundary mb-3" style="max-width: 30rem;">
+                            <div class="card-header">
+                                <h4 style="color: black;"> Nuevo</h4>
+                            </div>
+                        <form id="formulario-productos" class="card-body">
+                            <h4 class="card-title">Producto</h4>
+                            <div class="grupo-formularios">
+                                <div class="input-group mb-3">
+                                <input type="text" id="name" placeholder="Nombre" class="control-producto">
+                                </div>
+                             <div class="grupo-formularios" >
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">Q.</span>
+                                    <input type="number" step="0.01" id="price" placeholder="Precio" class="control-formulario">
+                                </div>
+                            </div>                
+                             </div>  
+                             <div class="grupo-formularios">
+                                <div class="input-group mb-3">
+                                <input type="number"  id="year"  min="1900" value="form-control wo-spin" max="2100" placeholder="Año" class="control-formulario"> 
+                                </div>                       
+                                       
+                             </div> 
+                                <input type="submit" value="Agregar" class="btn btn-primary btn-block" style="border: radius 3px;">
+                                
+                            </div>
+                        </form>
+                        </div>   
+                        </div>
+                    </div>
+                    <div id="Lista-productos" class="col-md-8"> 
+                    </div>
+                </div>        
+            </div>
+            <script src="App.js">                
+            </script>
+        </body>
+    </head>
+</html>
